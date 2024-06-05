@@ -1,4 +1,9 @@
 .a {
   text-align: center;
-  color: aqua;
+  color: red;
+}
+
+.hero {
+  text-align: center;
+  color: darkred;
 }

@@ -1,14 +1,13 @@
 import "./style.css";
-import "./nav.css";
-import Batch from "./Batch";
-import Nav from "./Nav";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <div className="a">
-      <Nav />
-      <h1>Hello React Student</h1>
-      <Batch />
+      <h1>Hello from navbar</h1>
+      <Navbar />
+      <Hero />
     </div>
   );
 }
