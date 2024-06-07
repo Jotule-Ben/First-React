@@ -1,0 +1,15 @@
+.imageContainer {
+  margin: auto;
+  width: 30%;
+  border: 3px solid silver;
+  margin: 10px;
+}
+
+.imgCon {
+  width: 100px;
+  padding-left: 100px;
+}
+
+img {
+  width: 100%;
+}

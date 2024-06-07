@@ -1,13 +1,12 @@
-import "./style.css";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+// import "./components/css/style.css";
+// import Navbar from "./components/Navbar";
+// import Hero from "./components/Hero";
+// import Gallery from "./components/Gallery";
 
 function App() {
   return (
-    <div className="a">
-      <h1>Hello from navbar</h1>
-      <Navbar />
-      <Hero />
+    <div className="app">
+      <h1>Hello from app js</h1>
     </div>
   );
 }

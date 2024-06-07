@@ -1,9 +1,11 @@
 import React from "react";
+import img10 from "./images/10.jpeg";
+import "./css/hero.css";
 
 const Hero = () => {
   return (
     <div className="hero">
-      <h1>Hey there, I'm the hero text!</h1>
+      <img src={img10} alt="" />
     </div>
   );
 };

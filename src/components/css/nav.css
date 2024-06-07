@@ -1,0 +1,24 @@
+/* .navbar {
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+} */
+
+.header {
+  background-color: chocolate;
+  position: fixed;
+  width: 99%;
+  padding: 15px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+li {
+  list-style-type: none;
+  color: antiquewhite;
+}
