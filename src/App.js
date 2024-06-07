@@ -3,10 +3,12 @@
 // import Hero from "./components/Hero";
 // import Gallery from "./components/Gallery";
 
+import Navbar from "./components_2/Navbar";
+
 function App() {
   return (
     <div className="app">
-      <h1>Hello from app js</h1>
+      <Navbar />
     </div>
   );
 }
