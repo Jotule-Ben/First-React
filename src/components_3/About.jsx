@@ -1,20 +1,19 @@
 import React from "react";
 
-const About = () => {
+const About = (props) => {
   return (
     <div>
       <h2>Hello and welcome! I'm the about page</h2>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nisi
-      minima necessitatibus alias fuga, sit magnam excepturi quibusdam eligendi
-      unde culpa inventore voluptatum nihil voluptate laborum in assumenda
-      reprehenderit tempora cum dolorem a, ipsam tenetur? Numquam tempora illo
-      minus ipsam distinctio veritatis aliquid ea culpa obcaecati, laborum
-      aliquam? Illum, expedita perferendis. Saepe assumenda distinctio vero
-      deserunt dignissimos, aspernatur fugit necessitatibus blanditiis! Fugiat
-      rerum, placeat laudantium voluptatibus nulla optio eos vitae quia
-      veritatis sunt sint quae tempore animi laborum nam. Sequi amet sit sint
-      doloribus, ratione harum eos veritatis quae, nemo inventore architecto
-      neque quas. Vitae qui laboriosam est enim veritatis?
+      <h1>{props.count}</h1>
+      <button onClick={props.inc}>Click me</button>
+
+      <button onClick={props.dec} disabled={props.count === 0}>
+        Reduce
+      </button>
+
+      <button onClick={props.reset} disabled={props.count === 0}>
+        Reset
+      </button>
     </div>
   );
 };
