@@ -1,13 +1,12 @@
 .home {
-  display: flex;
+  /* display: flex; */
   background-color: bisque;
   justify-content: space-between;
 }
 
-.home > a {
+/* .home > a {
   display: flex;
-  justify-content: space-between;
-}
+  } */
 
 .homeUl {
   max-width: 100%;
@@ -15,12 +14,12 @@
   padding: 20px;
   display: flex;
   /* background-color: burlywood; */
-  border: 1px solid green;
-  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  /* border: 1px solid green; */
 }
 
 img {
-  width: 40%;
+  width: 30%;
 }
 
 /* .imageContainer {
