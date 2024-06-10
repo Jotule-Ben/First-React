@@ -1,0 +1,40 @@
+.home {
+  display: flex;
+  background-color: bisque;
+  justify-content: space-between;
+}
+
+.home > a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeUl {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  /* background-color: burlywood; */
+  border: 1px solid green;
+  /* flex-wrap: wrap; */
+}
+
+img {
+  width: 40%;
+}
+
+/* .imageContainer {
+  margin: auto;
+  width: 100%;
+  border: 3px solid silver;
+  display: flex;
+}
+
+.imgCon {
+  width: 30px;
+  /* padding-left: 100px; 
+}
+
+img {
+  width: 10%;
+} */
