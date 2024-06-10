@@ -11,6 +11,13 @@ function FormFunc(props) {
   const email = useRef();
   const phone = useRef();
 
+  const handleSubmit = (event) => {
+    console.log(
+      `First name: ${name.current.value} \nLast name: ${lastName.current.value} \nEmail: ${email.current.value} \nPhone: ${phone.current.value}`
+    );
+    event.preventDefault();
+  };
+
   return (
     <Modal
       {...props}
