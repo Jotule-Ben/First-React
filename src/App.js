@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components_3/Navbar";
 import Home from "./components_3/Home";
@@ -30,12 +30,32 @@ function App() {
   //   setText("Ojotule");
   // };
 
-  const userName = "Benny12";
+  // const userName = "Benny12";
+
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const url = "https://fakestoreapi.com/products";
+
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(data);
+        // console.log(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home userName={userName} />} />
+        <Route
+          path="/"
+          element={<Home products={products} loading={loading} />}
+        />
         {/* <Route
           path="/"
           element={
