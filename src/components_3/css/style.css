@@ -1,0 +1,25 @@
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:hover {
+  color: crimson;
+}
+
+a {
+  color: antiquewhite;
+  text-decoration: none;
+}
