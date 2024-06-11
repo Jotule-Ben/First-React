@@ -28,7 +28,7 @@ const Form = () => {
 
     if (!formData.password) {
       tempErrors.password = "password is required";
-      isValid = true;
+      isValid = false;
     } else if (formData.password.length < 4) {
       tempErrors.password = "Password length must be 4 or more";
       isValid = false;
@@ -54,7 +54,7 @@ const Form = () => {
         email: "",
         password: "",
       });
-      setError();
+      setError({});
     }
   };
 
@@ -70,17 +70,19 @@ const Form = () => {
             value={formData.name}
             onChange={handleChange}
           />
+          {errors.name && <span>{errors.name}</span>}
         </div>
 
         {/* email */}
         <div>
-          <label htmlFor="email">Password: </label>
+          <label htmlFor="email">Email: </label>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
           />
+          {errors.email && <span>{errors.email}</span>}
         </div>
 
         {/* password */}
@@ -92,6 +94,7 @@ const Form = () => {
             value={formData.password}
             onChange={handleChange}
           />
+          {errors.password && <span>{errors.password}</span>}
         </div>
 
         <button>Submit</button>
